@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodrum Cast Ajans | Oyunculuk & Model Ajansı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Renk Paleti ve Temel Ayarlar */
+        :root {
+            --ana-renk: #0a1931; /* Logodaki koyu lacivert */
+            --vurgu-mavi: #00b4d8; /* Logodaki turkuaz/mavi */
+            --beyaz: #ffffff;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--ana-renk);
+            color: var(--beyaz);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Arka Plan Efekti */
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(0, 180, 216, 0.1) 0%, rgba(10, 25, 49, 1) 70%);
+            z-index: -1;
+        }
+
+        /* Ana Konteyner */
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 500px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Logo Ayarı */
+        .logo {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        /* Instagram Butonu */
+        .btn-instagram {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: var(--beyaz);
+            border: 2px solid var(--vurgu-mavi);
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2);
+        }
+
+        .btn-instagram i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .btn-instagram:hover {
+            background-color: var(--vurgu-mavi);
+            color: var(--ana-renk);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 180, 216, 0.4);
+        }
+
+        /* Alt Bilgi */
+        .footer {
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            letter-spacing: 1px;
+        }
+
+        /* Animasyon */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .logo { max-width: 250px; }
+            h1 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <img src="logo.png" alt="Bodrum Cast Ajans Logo" class="logo">
+        
+        <h1>Yakında Sizlerle...</h1>
+
+        <a href="https://www.instagram.com/castajansbodrum" target="_blank" class="btn-instagram">
+            <i class="fab fa-instagram"></i> Instagram'da Takip Et
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 Bodrum Cast Ajans - Oyunculuk & Model Ajansı
+    </div>
+
+</body>
+</html>
